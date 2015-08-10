@@ -1,0 +1,4 @@
+= form_for deck do |t|
+  = deck.errors.full_messages if deck.errors.present?
+  = t.text_field :title
+  = t.submit

@@ -1,0 +1,8 @@
+.container-fluid
+  .row
+    .col-md-12
+      %h1 Decks
+
+      - decks.each do |deck|
+        .col-md-3= link_to deck.title, deck_path(deck.id)
+        %br
